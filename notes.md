@@ -108,3 +108,10 @@
   * `{:?}` - debug
   * `{:#?}` - prettyprint
 * `dbg!()` print value to stderr, return ownership and value
+
+# Chapter 8: Common collections
+
+* Vectors - expandable collection of like typed values.
+  * `let v = vec![1, 2, 3];` the `vec!` macro creates + populates the vector.
+  * `v.get()` does not panic, whereas `v[5]` does.
+  * Can use a vec of enums to store items of multiple types.
