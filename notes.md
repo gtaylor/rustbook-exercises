@@ -88,3 +88,23 @@
     * `loop` loops infinitely
     * Break can return an arg `break 10`
     * You can label loops: `'counting_up: loop {`, `break 'counting_up;`
+
+# Chapter 4: Understanding Ownership
+
+* At any given time, you can have either one mutable reference or any number of immutable references.
+* References must always be valid.
+* Slice
+  * A slice is a kind of reference, so it does not have ownership.
+  * String literals are stored as `&str`, a slice.
+  * References to `String` objects are equivalent to a whole slice of the `String`
+
+# Chapter 5: Using Structs to Structure Related Data
+
+* Structs
+  * Data within are called "fields"
+  * Tuple struct: `struct Color(i32, i32, i32);`
+  * Unit-like struct: `struct AlwaysEqual;`
+* print stuffs
+  * `{:?}` - debug
+  * `{:#?}` - prettyprint
+* `dbg!()` print value to stderr, return ownership and value
